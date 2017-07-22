@@ -466,6 +466,12 @@ background-color: #fff !important;
   background: linear-gradient(45deg, rgba(88,104,120,1) 0%, rgba(88,104,120,1) 2%, rgba(52,73,94,1) 24%, rgba(52,73,94,1) 61%, rgba(33,47,61,1) 100%);
 }
 
+@media only screen and (max-width: 786px) {
+  .overlay{
+    visibility: hidden;
+  }
+}
+
 .g-img:hover .overlay {
   opacity: 1;
 }
