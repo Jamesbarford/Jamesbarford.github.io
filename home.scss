@@ -476,6 +476,12 @@ background-color: #fff !important;
   opacity: 1;
 }
 
+@media only screen and (max-width: 786px) {
+  .g-img:hover .overlay{
+    visibility: hidden;
+  }
+}
+
 .btn{
   background: transparent;
   border: 1px solid;
