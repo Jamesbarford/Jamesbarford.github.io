@@ -86,6 +86,7 @@ nav{
   -moz-transition: transform .8s ease-in-out;
   -o-transition: transform .8s ease-in-out;
   transition: transform .8s ease-in-out;
+  visibility: hidden;
 }
 
 nav h2{
