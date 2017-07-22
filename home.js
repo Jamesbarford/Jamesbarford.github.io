@@ -8,6 +8,14 @@ $(".nav-icon").click(function(){
   $(".gallery").toggleClass("open");
   });
 
+  $('.nav-item').click(function(){
+    $(".navigation").toggleClass("open");
+    $("#all").toggleClass("open");
+    $(".gallery").toggleClass("open");
+    $(".nav-icon").toggleClass("open");
+    $(this).toggleClass("open");
+  });
+
 
   var scroll_start = 0;
      var startchange = $('.startchange');
