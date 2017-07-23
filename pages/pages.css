@@ -411,6 +411,18 @@ ul.instructions{
     width: 100%;
   }
 }
+.gal-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.vector{
+  margin: auto;
+  max-width: 400px;
+  padding: 10px;
+}
 
 .codeblock{
   width: 80%;
