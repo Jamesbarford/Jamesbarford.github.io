@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://use.fontawesome.com/d929cc4e61.js"></script>
+<link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body>
+  <div class="nav">
+    <ul class="nav-ul">
+      <li class="nav-brand"><a href="index.html">John Barford</a></li>
+      <li class="nav-li"><a href="interim-management">Interim Managment</a></li>
+      <li class="nav-li"><a href="consultancy">Consultancy</a></li>
+    </ul>
+    <div class="nav-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="main-splash">
+    <div class="main-splash-text">
+      <h1>John Barford</h1>
+      <h1>Interim Managment</h1>
+      <p>You don’t need to dive to the bottom of the ocean to find the right solution</p>
+    </div>
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </div>
+
+    <div class="page-image-wrap">
+      <div class="block-1">
+        <div class="text-block-1">
+          <h2>Why Use An Interim Manager?</h2>
+          <p>An interim director or manager enables you to
+harness the skills of a highly experienced person
+to fulfil the needs of your organisation at a particular
+moment in its life.</p>
+        </div>
+        <div class="image-block-1">
+          <img class="image" src="images/design-museum.jpg" alt="Design Museum"/>
+        </div>
+      </div>
+      <div class="block-2">
+        <div class="text-block-2">
+          <h2>The Problems I Solve</h2>
+          <p>An interim manager or director offers expertise
+at a time of change.  This could mean new
+business development, restructuring or giving an
+organisation some breathing space during the
+recruitment of a permanent executive, while moving
+the organisation forward through the delivery of
+key objectives and developing teams.</p>
+        </div>
+        <div class="image-block-2">
+          <img class="image" src='images/national-gallery.jpg' alt="National Gallery London"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-list">
+      <h2>Key Skills</h2>
+      <ul class="list-group">
+        <li class="list-items">
+          <h3>Strategy</h3>
+          Identify and develop strategic objectives and
+          implement plans to meet these over the short,
+          medium and long-term through the effective
+          deployment of resources.
+        </li>
+        <li class="list-items">
+          <h3>Business Planning</h3>
+          Build, model and implement business plans,
+          develop opportunities and identify cost savings.
+          Drive sales and profitability.
+        </li>
+        <li class="list-items">
+          <h3>People</h3>
+          Manage, motivate and develop teams across a
+          broad range of disciplines to ensure a lasting
+          impact. Action full cycle recruitment and
+          induction to the permanent role.
+        </li>
+        <li class="list-items">
+          <h3>Marketing</h3>
+          Manage the marketing function to understand
+          and reach target customers/audience with the
+          brand proposition and drive revenue. Increase
+          brand equity.
+        </li>
+        <li class="list-items">
+          <h3>Retail</h3>
+          Make strategic decisions on market positioning
+          and brand, product range, merchandising,
+          operations and customer service.
+        </li>
+        <li class="list-items">
+          <h3>Ecommerce</h3>
+          Drive strategic plans to develop online trading
+          through increasing traffic, conversion, average
+          order value and repeat purchase.
+        </li>
+        <li class="list-items">
+          <h3>Catering</h3>
+          Align the offer to the target market across menu,
+          environment and value for money. Establish KPIs,
+          performance reporting and contract governance.
+        </li>
+        <li class="list-items">
+          <h3>Publishing</h3>
+          Address the commercial imperative of a
+          publishing programme through working with
+          editorial, production, sales and distribution
+          teams.
+        </li>
+        <li class="list-items">
+          <h3>Visitor Experience</h3>
+          Manage the strategic planning and delivery of
+          a consistent quality visitor experience that drives
+          revenue and repeat visits.
+        </li>
+      </ul>
+  </div>
+
+  <section class="client-logos">
+    <h2>Clients</h2>
+      <ul class="client-logos-list">
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/dm-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/national-gallery-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/ra-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/sm-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img-last" src='images/client-logos/museumofbrands-logo.png'></li>
+      </ul>
+  </section>
+
+  <section class="footer">
+    <div class="footer-text">
+      <h2>For More Information</h2>
+      <h3>Contact</h3>
+      <a href="mailto:john@johnbarford.com">john@johnbarford.com</a>
+      <a href="https://www.linkedin.com/in/john-barford-954803/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <div class="footer-bottom-text">John Barford LTD <span class="year"></span></div>
+    </div>
+  </section>
+
+<script src="js/scripts.js"></script>
+<script src="js/pages.js"></script>
+<body>
+</html>

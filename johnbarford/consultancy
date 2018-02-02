@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://use.fontawesome.com/d929cc4e61.js"></script>
+<link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body>
+  <div class="nav">
+    <ul class="nav-ul">
+      <li class="nav-brand"><a href="index.html">John Barford</a></li>
+      <li class="nav-li"><a href="interim-management">Interim Managment</a></li>
+      <li class="nav-li"><a href="consultancy">Consultancy</a></li>
+    </ul>
+    <div class="nav-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="main-splash">
+    <div class="main-splash-text">
+      <h1>John Barford</h1>
+      <h1>Consultancy</h1>
+      <p>Enabling businesses to develop with solid, knowledgeable and actionable input</p>
+    </div>
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+
+    <div class="page-image-wrap">
+      <div class="block-1">
+        <div class="text-block-1">
+          <h2>Why Use A Consultant?</h2>
+          <p>An independent consultant provides an objective look at your business needs and offers a cost-effective alternative to recruiting in-house expertise. With over 20 years’ experience I provide a wealth of knowledge and practical understanding of commercial development and operations in the culture sector, charities, visitor attractions and niche retail brands.</p>
+        </div>
+        <div class="image-block-1">
+          <img class="image" src="images/nottingham-castle.jpg" alt="Nottingham Castle"/>
+        </div>
+      </div>
+      <div class="block-2">
+        <div class="text-block-2">
+          <h2>The Opportunities I Develop and Problems I Solve</h2>
+          <p>From developing strategy and business modelling to operational delivery, I improve your overall operation and profitability through strong analytical capabilities. When working with individuals and teams, I embed lasting skills and knowledge through professional development enabling continual growth beyond the duration of the consultancy project. Specialisms include; retail, ecommerce, visitor experience and catering.</p>
+        </div>
+        <div class="image-block-2">
+          <img class="image" src='images/uk-antartic-heritage.jpg' alt="UK Antarctic Heritage Trust by Ylva Grams"/>
+          <span class="image-acreditation">&copy;UKAHT, photo by Ylva grams</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-list">
+      <h2>Key Skills</h2>
+      <ul class="list-group">
+        <li class="list-items">
+          <h3>Strategy</h3>
+          Propose new ways forward in a concise straightforward manner that meet the strategic objectives of the business over the short, medium and long-term.
+        </li>
+        <li class="list-items">
+          <h3>Business Planning</h3>
+          Build and model business plans, develop opportunities and identify cost savings. Drive sales and profitability.
+        </li>
+        <li class="list-items">
+          <h3>Retail</h3>
+          Provide a strategic plan on market positioning, product range, merchandising, operations and customer service.
+        </li>
+        <li class="list-items">
+          <h3>Store Layout and Design</h3>
+          Store Layout and Design', content: 'Advise on the practical considerations of layout, navigation, fixtures and visual merchandising that optimise the use of space and maximise sales and profitability.
+        </li>
+        <li class="list-items">
+          <h3>Range Planning</h3>
+          Build range plans that meet the needs of the target market and align with the space and budget available.
+        </li>
+        <li class="list-items">
+          <h3>Buying & Product Development</h3>
+          Source products to meet the price points and category mix defined in the range plan to add exclusivity to the product mix.
+        </li>
+        <li class="list-items">
+          <h3>Ecommerce</h3>
+          Bring commercial acumen to develop and implement online shops including platform selection, product assortment, ranging, marketing and fulfilment.
+        </li>
+        <li class="list-items">
+          <h3>Catering Strategy</h3>
+          Advise on tendering contracts, contract management, setting KPIs and aligning the offer to the target market.
+        </li>
+        <li class="list-items">
+          <h3>Systems</h3>
+          Develop specifications for system development and tendering across EPOS, merchandising, ecommerce and ticketing.
+        </li>
+      </ul>
+  </div>
+
+  <section class="client-logos">
+    <h2>Clients</h2>
+      <ul class="client-logos-list">
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/fine-cell-works-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/heath-robinson-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/nottingham-castle-logo.png'></li>
+        <li class="client-logos-item"><img class="client-logo-img" src='images/client-logos/ukaht-logo.png'></li>
+      </ul>
+  </section>
+
+  <section class="footer">
+    <div class="footer-text">
+      <h2>For More Information</h2>
+      <h3>Contact</h3>
+      <a href="mailto:john@johnbarford.com">john@johnbarford.com</a>
+      <a href="https://www.linkedin.com/in/john-barford-954803/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <div class="footer-bottom-text">John Barford LTD <span class="year"></span></div>
+    </div>
+  </section>
+
+<script src="js/scripts.js"></script>
+<script src="js/pages.js"></script>
+<body>
+</html>
