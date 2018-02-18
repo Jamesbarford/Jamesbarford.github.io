@@ -1,14 +1,19 @@
-(function imgBackground() {
-  if(document.getElementsByTagName('h1')[1].textContent == 'Consultancy') {
-    document.querySelector('.main-splash').style.backgroundImage = "url('styles/background/consultancy-background.jpg')";
-    document.querySelector('.main-list').style.backgroundColor = '#3B6AA3';
+var imageBackground = {
+  mainSplash: document.querySelector('.main-splash'),
+  mainList: document.querySelector('.main-list'),
+  clientLogos: document.querySelector('.client-logos-list'),
+  changeBackground: function () {
+    if (document.getElementsByTagName('h1')[1].textContent == 'Consultancy') {
+      this.mainSplash.style.backgroundImage = "url('styles/background/consultancy-background.jpg')";
+      this.mainList.style.backgroundColor = '#3B6AA3';
+    } else {
+      this.mainSplash.style.backgroundImage = "url('styles/background/interim-background.jpg')";
+      this.mainList.style.backgroundColor = '#295C5F';
+      this.clientLogos.style.paddingTop = '40px';
+    }
   }
-  else {
-    document.querySelector('.main-splash').style.backgroundImage = "url('styles/background/interim-background.jpg')";
-    document.querySelector('.main-list').style.backgroundColor = '#295C5F';
-    document.querySelector('.client-logos-list').style.paddingTop = '40px';
-  }
-})();
+};
+imageBackground.changeBackground();
 
 (function footerText() {
   var date = new Date;
