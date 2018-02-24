@@ -71,7 +71,7 @@ $circular: 'Circular', sans-serif
 $circularMedium: 'CircularStd', sans-Serif
 $circularBold: 'CircularBold', sans-Serif
 
-$smartPhonesBoth: '(min-width: 320px) and (max-width: 740px)'
+$smartPhonesBoth: '(min-width: 320px) and (max-width: 812px)'
 $smartPhoneLandscape: '(min-width: 415px)'
 $smartPhonePortrait: '(max-width : 414px)'
 
@@ -317,6 +317,9 @@ li
 	z-index: 2
 	color: #fff
 
+	@media#{$smartPhonesBoth}
+		padding-left: 20px
+
 	@media(max-width: 700px)
 		color: #333
 		display: flex
@@ -416,7 +419,7 @@ li
 	color: #fff
 	z-index: 2
 
-	@media (max-width:800px)
+	@media (max-width:766px)
 		display: none
 
 //home page
@@ -484,7 +487,7 @@ li
 	@media(max-width: 890px)
 		flex-direction: column
 
-	@media(max-width: 600px)
+	@media#{$smartPhonesBoth}
 		height: 100%
 
 .interim-button,
@@ -511,9 +514,6 @@ li
 
   @media(max-width: 890px)
   	width: 100%
-
-  @media(max-width: 600px)
-  	height: 75vh
 
   p:first-child
   	color: #333
@@ -591,7 +591,7 @@ li
 .page-image-wrap
   height: 120vh
 
-  @media (max-width: 800px)
+  @media#{$smartPhonesBoth}
     height: auto
 
 .block-1,
@@ -603,13 +603,13 @@ li
   display: -ms-flexbox
   display: -webkit-flex
 
-  @media (max-width: 800px)
+  @media #{$smartPhonesBoth}
     flex-direction: column
 
 .block-2
   flex-direction: row-reverse
 
-  @media (max-width: 800px)
+  @media #{$smartPhonesBoth}
     flex-direction: column
 
 .text-block-1,
@@ -625,7 +625,7 @@ li
   justify-content: center
   -ms-flex-align: center
 
-  @media (max-width: 800px)
+  @media #{$smartPhonesBoth}
     width: 100%
     padding-bottom: 30px
     height: 400px
@@ -635,14 +635,14 @@ li
     padding-left: 40px
     text-align: left
 
-    @media (max-width: 800px)
+    @media #{$smartPhonesBoth}
       padding: 10px
       width: auto
 
   h2
     padding-left: 40px
 
-    @media (max-width: 800px)
+    @media #{$smartPhonesBoth}
       text-align: center
       padding-left: 0
 
@@ -660,12 +660,12 @@ li
 	-ms-flex-align: center
 	align-items: center
 
-	@media (max-width: 800px)
+	@media #{$smartPhonesBoth}
 		width: 100%
 		display: flex
 
 .image-block-1
-	@media (max-width: 800px)
+	@media #{$smartPhonesBoth}
 		padding-bottom: 30px
 
 .image
@@ -675,8 +675,9 @@ li
 	height: 100%
 	object-position: -30px
 
-	@media (max-width: 800px)
+	@media #{$smartPhonesBoth}
 		object-position: 0
+		width: 100%
 
 
 //list of key Skills
@@ -706,7 +707,7 @@ li
 	letter-spacing: 0.45px
 	text-align: left
 
-	@media (max-width: 768px)
+	@media #{$smartPhonesBoth}
 		width: 100%
 
   h3
@@ -731,7 +732,7 @@ li
 	flex-wrap: wrap
 	padding-bottom: 30px
 
-	@media (max-width: 768px)
+	@media #{$smartPhonesBoth}
 	  flex-wrap: wrap
 
 .client-logos-item
@@ -748,7 +749,7 @@ li
 	flex-grow: 1
 	width: calc(100% * 0.2 - 10px - 1px)
 
-	@media (max-width: 768px)
+	@media #{$smartPhonesBoth}
 		width: calc(100% * 0.333333333333333 - 10px - 1px)
 
 	a

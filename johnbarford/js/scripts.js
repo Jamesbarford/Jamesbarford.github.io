@@ -15,13 +15,23 @@ var menuObj = {
 };
 menuObj.clickMenu();
 
-(function mobileFix (){
-  if(document.querySelector('.home-text-wrap')) {
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      document.querySelector('.home-text-wrap').style.height = window.innerHeight + 'px';
+
+var MobileFix = {
+  interimColumn: document.querySelector('.column-interim'),
+  consultantColumn: document.querySelector('.column-consultant'),
+  homeWrap: document.querySelector('.home-text-wrap'),
+  coloumnWrap: document.querySelector('.column-wrapper'),
+  fixHeight: function () {
+    if((this.homeWrap && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && (window.innerHeight < window.innerWidth || window.innerHeight > window.innerWidth)) {
+        this.homeWrap.style.height = window.innerHeight + 'px';
+        this.interimColumn.style.height = window.innerHeight - 25 + 'px';
+        this.consultantColumn.style.height = window.innerHeight  - 25 + 'px';
+        this.coloumnWrap.style.height = '100%';
     }
   }
-})();
+};
+window.addEventListener('resize', MobileFix.fixHeight() );
+
 
 function scrollIt(destination, duration, easing, callback) {
   if (duration === undefined) duration = 200;

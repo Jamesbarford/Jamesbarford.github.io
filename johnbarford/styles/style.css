@@ -189,7 +189,7 @@ h1 {
   line-height: 75px;
   letter-spacing: 0.45px; }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 812px) {
   h1 {
     font-size: 26px;
     line-height: 35px;
@@ -218,7 +218,7 @@ p {
   letter-spacing: 0.45px;
   margin: 0; }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 812px) {
   p {
     font-size: 17px;
     line-height: 22px; } }
@@ -279,6 +279,10 @@ li {
   z-index: 2;
   color: #fff; }
 
+@media (min-width: 320px) and (max-width: 812px) {
+  .nav-ul {
+    padding-left: 20px; } }
+
 @media (max-width: 700px) {
   .nav-ul {
     color: #333;
@@ -330,7 +334,7 @@ li {
   background-color: #fff;
   position: fixed; }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .nav-hamburger span {
     right: 20px; } }
 
@@ -408,7 +412,7 @@ li {
   color: #fff;
   z-index: 2; }
 
-@media (max-width: 800px) {
+@media (max-width: 766px) {
   .fa-angle-down {
     display: none; } }
 
@@ -442,7 +446,7 @@ li {
   width: 550px;
   padding-left: 40px; }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .home-text {
     width: auto;
     padding-left: 20px;
@@ -475,7 +479,7 @@ li {
   .column-wrapper {
     flex-direction: column; } }
 
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .column-wrapper {
     height: 100%; } }
 
@@ -507,10 +511,6 @@ li {
 @media (max-width: 890px) {
   .column-consultant {
     width: 100%; } }
-
-@media (max-width: 600px) {
-  .column-consultant {
-    height: 75vh; } }
 
 .column-consultant p:first-child {
   color: #333; }
@@ -582,14 +582,14 @@ li {
 .main-splash-text h1:nth-child(2) {
   padding-bottom: 200px; }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .main-splash-text h1:nth-child(2) {
     padding-bottom: 100px; } }
 
 .page-image-wrap {
   height: 120vh; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .page-image-wrap {
     height: auto; } }
 
@@ -602,7 +602,7 @@ li {
   display: -ms-flexbox;
   display: -webkit-flex; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .block-1,
   .block-2 {
     flex-direction: column; } }
@@ -610,7 +610,7 @@ li {
 .block-2 {
   flex-direction: row-reverse; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .block-2 {
     flex-direction: column; } }
 
@@ -627,7 +627,7 @@ li {
   justify-content: center;
   -ms-flex-align: center; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .text-block-1,
   .text-block-2 {
     width: 100%;
@@ -640,7 +640,7 @@ li {
   padding-left: 40px;
   text-align: left; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .text-block-1 p,
   .text-block-2 p {
     padding: 10px;
@@ -650,7 +650,7 @@ li {
 .text-block-2 h2 {
   padding-left: 40px; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .text-block-1 h2,
   .text-block-2 h2 {
     text-align: center;
@@ -669,13 +669,13 @@ li {
   -ms-flex-align: center;
   align-items: center; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .image-block-1,
   .image-block-2 {
     width: 100%;
     display: flex; } }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .image-block-1 {
     padding-bottom: 30px; } }
 
@@ -686,7 +686,7 @@ li {
   height: 100%;
   object-position: -30px; }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .image {
     object-position: 0;
     width: 100%; } }
@@ -717,7 +717,7 @@ li {
   letter-spacing: 0.45px;
   text-align: left; }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .list-items {
     width: 100%; }
   .list-items h3 {
@@ -740,7 +740,7 @@ li {
   flex-wrap: wrap;
   padding-bottom: 30px; }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .client-logos-list {
     flex-wrap: wrap; } }
 
@@ -758,7 +758,7 @@ li {
   flex-grow: 1;
   width: calc(100% * 0.2 - 10px - 1px); }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .client-logos-item {
     width: calc(100% * 0.333333333333333 - 10px - 1px); } }
 
