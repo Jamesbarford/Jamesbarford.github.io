@@ -15,15 +15,16 @@ var menuObj = {
 };
 menuObj.clickMenu();
 
-
 var MobileFix = {
   interimColumn: document.querySelector('.column-interim'),
   consultantColumn: document.querySelector('.column-consultant'),
   homeWrap: document.querySelector('.home-text-wrap'),
+  homeOverlay: document.querySelector('.home-overlay'),
   coloumnWrap: document.querySelector('.column-wrapper'),
   fixHeight: function () {
     if((this.homeWrap && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && (window.innerHeight < window.innerWidth || window.innerHeight > window.innerWidth)) {
         this.homeWrap.style.height = window.innerHeight + 'px';
+        this.homeOverlay.style.height = window.innerHeight + 'px';
         this.interimColumn.style.height = window.innerHeight - 25 + 'px';
         this.consultantColumn.style.height = window.innerHeight  - 25 + 'px';
         this.coloumnWrap.style.height = '100%';
