@@ -19,7 +19,6 @@ menuObj.clickMenu();
   if(document.querySelector('.home-text-wrap')) {
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       document.querySelector('.home-text-wrap').style.height = window.innerHeight + 'px';
-      document.querySelector('.column-wrapper').style.height = window.innerHeight + 'px';
     }
   }
 })();
