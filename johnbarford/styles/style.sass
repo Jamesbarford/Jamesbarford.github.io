@@ -86,7 +86,6 @@ $iphone5Both: '(min-width : 320px) and (max-width : 568px)'
 $iphone5Landscape: '(max-height : 350px)'
 $iphone5Portrait: '(min-width : 320px) and (max-width : 568px) and (orientation: portrait)'
 
-
 html
   line-height: 1.15
   -ms-text-size-adjust: 100%
@@ -416,6 +415,10 @@ li
 	width: 100%
 	color: #fff
 	z-index: 2
+
+	@media (max-width:800px)
+		display: none
+
 //home page
 
 .home-text-wrap
@@ -436,7 +439,7 @@ li
   z-index: 0
   background: #333
   position: absolute
-  height: 100vh
+  height: 100%
   width: 100%
   content: ''
   opacity: 0.6
@@ -482,7 +485,7 @@ li
 		flex-direction: column
 
 	@media(max-width: 600px)
-		height: auto
+		height: 100%
 
 .interim-button,
 .consultant-button
@@ -606,7 +609,7 @@ li
 .block-2
   flex-direction: row-reverse
 
-  @media (max-width: 768px)
+  @media (max-width: 800px)
     flex-direction: column
 
 .text-block-1,
@@ -646,23 +649,35 @@ li
 
 .image-block-1,
 .image-block-2
-  width: 50%
-  overflow: hidden
+	width: 50%
+	overflow: hidden
+	display: flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	-ms-flex-pack: center
+	justify-content: center
+	-ms-flex-align: center
+	align-items: center
 
-  @media (max-width: 800px)
-    width: 100%
-    display: flex
+	@media (max-width: 800px)
+		width: 100%
+		display: flex
+
+.image-block-1
+	@media (max-width: 800px)
+		padding-bottom: 30px
 
 .image
-  height: 100%
-  display: flex
-  display: -webkit-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  -ms-flex-pack: center
-  justify-content: center
-  -ms-flex-align: center
-  align-items: center
+	object-fit: contain
+	margin: 0 auto
+	display: block
+	height: 100%
+	object-position: -30px
+
+	@media (max-width: 800px)
+		object-position: 0
+
 
 //list of key Skills
 .main-list
@@ -733,19 +748,17 @@ li
 	flex-grow: 1
 	width: calc(100% * 0.2 - 10px - 1px)
 
+	@media (max-width: 768px)
+		width: calc(100% * 0.333333333333333 - 10px - 1px)
+
 	a
 		text-align: center
-
-  @media (max-width: 768px)
-    width: 40%
 
 .client-logo-img
   width: 90%
 
 .client-logo-img-last
   width: 40%
-
-
 
 //Footer
 .footer

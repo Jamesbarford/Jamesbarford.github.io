@@ -10,6 +10,7 @@ var imageBackground = {
       this.mainSplash.style.backgroundImage = "url('styles/background/interim-background.jpg')";
       this.mainList.style.backgroundColor = '#295C5F';
       this.clientLogos.style.paddingTop = '40px';
+      this.clientLogos.style.height = 'auto';
     }
   }
 };
