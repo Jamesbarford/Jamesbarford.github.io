@@ -95,7 +95,8 @@ html
   text-rendering: geometricPrecision
 
 body
-  margin: 0
+	margin: 0
+	color: #333
 
 article, aside, footer, header, nav, section
   display: block
@@ -297,6 +298,11 @@ li
 	z-index: 2
 	left: 0
 	width: 100%
+	@include fastTransition
+
+.fa-angle-double-left
+	@media(max-width: 700px)
+		display: none
 
 .nav.open
 	height: 100%
@@ -340,7 +346,7 @@ li
 .nav-li a:hover
   border-bottom: 2px solid #fff
   padding-bottom: 5px
-  transition: .3s
+  @include fastTransition
 
 .nav-li.open
 	display: flex
@@ -424,6 +430,13 @@ li
 
 //home page
 
+.home-overlay
+	position: absolute
+	height: 100%
+	width: 100%
+	opacity: 0.6
+	background-color: #333
+
 .home-text-wrap
   height: 100vh
   display: flex
@@ -437,15 +450,6 @@ li
   background-position: center
   background-size: cover
   background-repeat: no-repeat
-
-.home-text-wrap::after
-  z-index: 0
-  background: #333
-  position: absolute
-  height: 100%
-  width: 100%
-  content: ''
-  opacity: 0.6
 
 .home-text
   color: #fff
@@ -614,38 +618,39 @@ li
 
 .text-block-1,
 .text-block-2
-  width: 50%
-  height: 100%
-  display: flex
-  display: -webkit-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  flex-direction: column
-  -ms-flex-pack: center
-  justify-content: center
-  -ms-flex-align: center
+	width: 50%
+	height: 100%
+	display: flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	flex-direction: column
+	-ms-flex-pack: center
+	justify-content: center
+	-ms-flex-align: center
 
-  @media #{$smartPhonesBoth}
-    width: 100%
-    padding-bottom: 30px
-    height: 400px
+	@media #{$smartPhonesBoth}
+		width: 100%
+		padding-bottom: 30px
+		height: 400px
 
-  p
-    width: 80%
-    padding-left: 40px
-    text-align: left
+	p
+		width: 80%
+		padding-left: 40px
+		text-align: left
 
-    @media #{$smartPhonesBoth}
-      padding: 10px
-      width: auto
+		@media #{$smartPhonesBoth}
+			padding: 10px
+			width: auto
 
-  h2
-    padding-left: 40px
+	h2
+		width: 80%
+		padding-left: 40px
 
-    @media #{$smartPhonesBoth}
-      text-align: center
-      padding-left: 0
-
+		@media #{$smartPhonesBoth}
+			text-align: center
+			padding-left: 0
+			width: 100%
 
 .image-block-1,
 .image-block-2
@@ -669,11 +674,9 @@ li
 		padding-bottom: 30px
 
 .image
-	object-fit: contain
-	margin: 0 auto
-	display: block
+	object-fit: cover
 	height: 100%
-	object-position: -30px
+	width: 100%
 
 	@media #{$smartPhonesBoth}
 		object-position: 0
@@ -768,14 +771,15 @@ li
   color: #fff
 
 .footer-text
-  height: 100%
-  display: flex
-  display: -webkit-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
+	height: 100%
+	display: flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	text-align: center
+	justify-content: center
+	align-items: center
+	flex-direction: column
 
 .fa-linkedin
   font-size: 30px
