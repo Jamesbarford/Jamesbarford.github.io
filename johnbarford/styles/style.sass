@@ -652,18 +652,11 @@ li
 			padding-left: 0
 			width: 100%
 
+
 .image-block-1,
 .image-block-2
 	width: 50%
 	overflow: hidden
-	display: flex
-	display: -webkit-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	-ms-flex-pack: center
-	justify-content: center
-	-ms-flex-align: center
-	align-items: center
 
 	@media #{$smartPhonesBoth}
 		width: 100%
@@ -682,6 +675,20 @@ li
 		object-position: 0
 		width: 100%
 
+.image-caption
+	position: absolute
+	display: block
+	margin-top: -20px
+	width: 50%
+	text-align: center
+	font-size: 12px
+	font-family: $circular
+	font-style: italic
+
+	@media #{$smartPhonesBoth}
+		margin-top: 0
+		width: auto
+		text-align: left
 
 //list of key Skills
 .main-list
