@@ -25,5 +25,6 @@ imageBackground.changeBackground();
 (function mobileFix (){
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     document.querySelector('.main-splash').style.height = window.innerHeight + 'px';
+    document.querySelector('.fa-angle-down').style.display = 'none';
   }
 })();

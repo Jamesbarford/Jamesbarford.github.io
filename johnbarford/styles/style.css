@@ -463,6 +463,29 @@ li {
     padding-right: 20px;
     text-align: left; } }
 
+.home-contact {
+  color: #fff;
+  z-index: 3;
+  font-family: "Circular", sans-serif;
+  padding-left: 40px;
+  position: absolute;
+  bottom: 12%;
+  font-size: 18px; }
+
+@media (min-width: 320px) and (max-width: 812px) {
+  .home-contact {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left; } }
+
+@media (max-height: 350px) {
+  .home-contact {
+    bottom: 5px; } }
+
+.home-contact a {
+  font-family: "CircularBold", sans-Serif;
+  border-bottom: 2px solid #fff; }
+
 .column-wrapper {
   height: 100vh;
   display: flex;

@@ -21,6 +21,7 @@ var MobileFix = {
   homeWrap: document.querySelector('.home-text-wrap'),
   homeOverlay: document.querySelector('.home-overlay'),
   coloumnWrap: document.querySelector('.column-wrapper'),
+  arrowDown: document.querySelector('.fa-angle-down'),
   fixHeight: function () {
     if((this.homeWrap && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && (window.innerHeight < window.innerWidth || window.innerHeight > window.innerWidth)) {
         this.homeWrap.style.height = window.innerHeight + 'px';
@@ -28,10 +29,11 @@ var MobileFix = {
         this.interimColumn.style.height = window.innerHeight - 25 + 'px';
         this.consultantColumn.style.height = window.innerHeight  - 25 + 'px';
         this.coloumnWrap.style.height = '100%';
+        this.arrowDown.style.display = 'none';
     }
   }
 };
-window.addEventListener('resize', MobileFix.fixHeight() );
+window.addEventListener('resize', MobileFix.fixHeight());
 
 
 function scrollIt(destination, duration, easing, callback) {
@@ -68,4 +70,5 @@ function scrollIt(destination, duration, easing, callback) {
   scroll();
 }
 document.querySelector('.fa-angle-down').addEventListener('click', function () {
-  scrollIt(document.querySelector('.column-wrapper') || document.querySelector('.page-image-wrap'), 500, 'linear') });
+  scrollIt(document.querySelector('.column-wrapper') || document.querySelector('.page-image-wrap'), 500, 'linear')
+});
