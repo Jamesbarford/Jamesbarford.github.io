@@ -72,14 +72,16 @@ var imageBackground = {
   mainList: document.querySelector('.main-list'),
   clientLogos: document.querySelector('.client-logos-list'),
   changeBackground: function () {
-    if (document.getElementsByTagName('h1')[1].textContent == 'Consultancy') {
-      this.mainSplash.style.backgroundImage = "url('styles/background/consultancy-background.jpg')";
-      this.mainList.style.backgroundColor = '#3B6AA3';
-    } else {
-      this.mainSplash.style.backgroundImage = "url('styles/background/interim-background.jpg')";
-      this.mainList.style.backgroundColor = '#295C5F';
-      this.clientLogos.style.paddingTop = '40px';
-      this.clientLogos.style.height = 'auto';
+    if(this.mainSplash) {
+      if (document.getElementsByTagName('h1')[1].textContent == 'Consultancy') {
+        this.mainSplash.style.backgroundImage = "url('styles/background/consultancy-background.jpg')";
+        this.mainList.style.backgroundColor = '#3B6AA3';
+      } else {
+        this.mainSplash.style.backgroundImage = "url('styles/background/interim-background.jpg')";
+        this.mainList.style.backgroundColor = '#295C5F';
+        this.clientLogos.style.paddingTop = '40px';
+        this.clientLogos.style.height = 'auto';
+      }
     }
   }
 };
