@@ -455,7 +455,7 @@ li {
 .home-text {
   color: #fff;
   z-index: 1;
-  text-align: justify;
+  text-align: left;
   width: 550px;
   padding-left: 40px; }
 
