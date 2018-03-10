@@ -424,6 +424,9 @@ li {
   color: #fff;
   z-index: 2; }
 
+.fa-angle-down:hover {
+  cursor: pointer;}
+
 @media (max-width: 1000px) {
   .fa-angle-down {
     display: none; } }
