@@ -470,11 +470,14 @@ li {
   color: #fff;
   z-index: 3;
   font-family: "Circular", sans-serif;
-  padding-left: 40px;
+
+  /*padding-left: 40px;
   position: absolute;
   bottom: 12%;
+  */
   font-size: 18px; }
 
+/*
 @media (max-height: 420px) and (max-width: 820px) and (orientation: landscape) {
   .home-contact {
     padding-left: 20px;
@@ -488,7 +491,7 @@ li {
     padding-right: 20px;
     text-align: left;
     bottom: 40px; } }
-
+*/
 .home-contact a {
   font-family: "CircularBold", sans-Serif;
   border-bottom: 2px solid #fff; }
