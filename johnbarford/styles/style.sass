@@ -75,6 +75,9 @@ $smartPhonesBoth: '(min-width: 320px) and (max-width: 812px)'
 $smartPhoneLandscape: '(min-width: 415px)'
 $smartPhonePortrait: '(max-width : 414px)'
 
+$allPhones-Landscape: '(max-height: 420px) and (max-width: 820px) and (orientation : landscape)'
+$allPhones-Portrait:  '(max-width: 420px) and (max-height: 820px) and (orientation : portrait)'
+
 $ipadBoth: '(min-width : 768px) and (max-width : 1024px)'
 $ipadLandscape: '(min-width: 768px) and (max-width : 1024px) and (orientation : landscape)'
 $ipadPortrait: '(min-width: 768px) and (max-width: 1024px) and (orientation : portrait)'
@@ -425,7 +428,7 @@ li
 	color: #fff
 	z-index: 2
 
-	@media (max-width:766px)
+	@media (max-width:1000px)
 		display: none
 
 //home page
@@ -473,13 +476,18 @@ li
 	bottom: 12%
 	font-size: 18px
 
-	@media#{$smartPhonesBoth}
-    padding-left: 20px
-    padding-right: 20px
-    text-align: left
+	@media#{$allPhones-Landscape}
+		padding-left: 20px
+		padding-right: 20px
+		text-align: left
+		bottom: 5px !important
 
-	@media#{$iphone5Landscape}
-		bottom: 5px
+	@media#{$allPhones-Portrait}
+		padding-left: 20px
+		padding-right: 20px
+		text-align: left
+		bottom: 40px
+
 
 	a
 		font-family: $circularBold
